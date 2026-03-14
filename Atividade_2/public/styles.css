@@ -1,0 +1,182 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+
+/* TITLE */
+#title {
+    margin-bottom: 25px;
+    font-size: 37px;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+/* FORM CARD */
+#conteudo {
+    background: #061e54;
+    padding: 28px;
+    border-radius: 12px;
+
+
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.6),
+        0 0 0 1px rgba(255,255,255,0.03);
+
+    transition: 0.2s;
+}
+
+/* INPUT AREA */
+.head {
+    display: flex;
+    gap: 10px;
+}
+
+/* INPUTS */
+.head input {
+    padding: 10px 12px;
+
+    background: #020617;
+    border: 1px solid #334155;
+
+    border-radius: 6px;
+
+    color: #e2e8f0;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+/* INPUT FOCUS */
+.head input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 1px #22c55e;
+}
+
+/* BUTTON ADD */
+.adicionar {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* BUTTON HOVER */
+.adicionar:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+/* PRODUCT LIST */
+#lista-produtos {
+    list-style: none;
+
+    margin-top: 22px;
+    width: 100%;
+    
+}
+
+/* LIST ITEM */
+#lista-produtos li {
+    background: #020617;
+
+    padding: 14px 16px;
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+
+    border: 1px solid #1e293b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15px;
+
+    transition: 0.15s;
+}
+
+/* HOVER ITEM */
+#lista-produtos li:hover {
+    background: #020617;
+    transform: translateY(-2px);
+    border-color: #334155;
+}
+
+/* PRICE */
+.produto-valor {
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* BUTTON GROUP */
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+/* ACTION BUTTONS */
+.btn-editar,
+.btn-deletar {
+    border: none;
+
+    padding: 6px 10px;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* EDIT BUTTON */
+.btn-editar {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-editar:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* DELETE BUTTON */
+.btn-deletar {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-deletar:hover {
+    background: #dc2626;
+    transform: translateY(-1px);
+}
